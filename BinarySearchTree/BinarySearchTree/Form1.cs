@@ -7,16 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BianrySearchTree;
 
-namespace BianrySearchTree
+namespace BinarySearchTree
 {
     public partial class Form1 : Form
     {
-        private BinarySearchTree bst;
+        private BST bst;
+      
         public Form1()
         {
             InitializeComponent();
-            bst = new BinarySearchTree();
+            bst = new BST();
             // Liên kết sự kiện Paint của Form với hàm Form1_Paint
             this.Paint += new PaintEventHandler(Form1_Paint);
         }
@@ -58,6 +60,11 @@ namespace BianrySearchTree
         }
 
 
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            DrawTree(e.Graphics); // Gọi hàm vẽ cây
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             int value = int.Parse(txtValue.Text); // Lấy giá trị từ textbox
@@ -65,9 +72,9 @@ namespace BianrySearchTree
             this.Invalidate(); // Gọi lại sự kiện Paint để vẽ lại cây
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            DrawTree(e.Graphics); // Gọi hàm vẽ cây
+
         }
     }
 }

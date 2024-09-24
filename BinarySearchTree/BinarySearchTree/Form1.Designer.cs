@@ -1,4 +1,4 @@
-﻿namespace BianrySearchTree
+﻿namespace BinarySearchTree
 {
     partial class Form1
     {
@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAdd = new System.Windows.Forms.Button();
             this.txtValue = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(57, 22);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(147, 44);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add node";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtValue
             // 
-            this.txtValue.Location = new System.Drawing.Point(225, 40);
+            this.txtValue.Location = new System.Drawing.Point(160, 57);
             this.txtValue.Name = "txtValue";
             this.txtValue.Size = new System.Drawing.Size(100, 26);
-            this.txtValue.TabIndex = 1;
+            this.txtValue.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(27, 57);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(98, 42);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 511);
-            this.Controls.Add(this.txtValue);
+            this.ClientSize = new System.Drawing.Size(747, 406);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtValue);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -66,8 +67,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtValue;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 

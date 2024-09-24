@@ -14,9 +14,9 @@ namespace BianrySearchTree
 
         public Node(int value)
         {
-            Value = value;        
+            Value = value;
         }
-
+       
         public Node Add(Node root, int value)
         {
             if (root == null)

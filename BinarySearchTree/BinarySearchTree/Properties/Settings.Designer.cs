@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BianrySearchTree.Properties
+namespace BinarySearchTree.Properties
 {
 
 

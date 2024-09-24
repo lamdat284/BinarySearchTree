@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BianrySearchTree
 {
-    public class BinarySearchTree
+    public class BST
     {
         public Node Root;
 
-        public BinarySearchTree()
+        public BST()
         {
             Root = null;
         }
@@ -30,9 +30,6 @@ namespace BianrySearchTree
                 Root.Add(Root, value); // Gọi phương thức Add của lớp Node để thêm giá trị vào cây
             }
         }
-
-
-
 
         // Thêm node vào BST
         //public void Insert(int value)
